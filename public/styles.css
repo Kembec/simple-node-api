@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply grid lg:grid-cols-2 grid-cols-1 gap-10;
+    @apply bg-zinc-50 ;
+}
+body > h1 {
+    @apply bg-zinc-800 col-span-full text-white px-5 p-3 text-2xl font-semibold antialiased drop-shadow-md;
+}
+body > section {
+    @apply p-5;
+}
+body > section#forms {
+    @apply flex flex-col space-y-10;
+}
+body > section#forms > div{
+    @apply flex flex-col drop-shadow-md;
+}
+body > section#forms > div > h2 {
+    @apply bg-zinc-200 font-bold px-3 py-2 ring-1 ring-zinc-200 text-zinc-900;
+}
+body > section#forms > div > form {
+    @apply grid grid-cols-2 gap-5 p-3;
+    @apply ring-1 ring-zinc-200 bg-zinc-50;
+}
+body > section#forms > div > form > input {
+    @apply bg-transparent border border-zinc-200 bg-zinc-100 p-2 only-of-type:col-span-full;
+}
+body > section#forms > div > form > button {
+    @apply col-span-full px-3 py-2 border border-black/10 transition-all text-zinc-50 font-semibold;
+}
+body > section#forms > div > form#createUserForm > button {
+    @apply bg-blue-500 hover:bg-blue-600;
+}
+body > section#forms > div > form#loginForm > button {
+    @apply bg-teal-500 hover:bg-teal-600;
+}
+body > section#forms > div > form#deleteUserForm > button {
+    @apply bg-red-500 hover:bg-red-600;
+}
+body > section#response {
+    @apply bg-zinc-100 ring-1 ring-zinc-200 p-5 mx-5 overflow-auto max-h-[85dvh];
+}

@@ -1,0 +1,15 @@
+{
+    "extends": ["@kembec/eslint-config/typescript/jest"], 
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"],
+            "parserOptions": {
+                "project": ["./tsconfig.json"]
+            },
+            "rules": {
+                "@typescript-eslint/unbound-method": "off",
+                "@typescript-eslint/no-misused-promises": "off"
+            }
+        }
+    ]
+}
