@@ -103,3 +103,9 @@ Este proyecto es una API REST básica desarrollada con Node.js, Express y Postgr
 ├── tailwind.config.js
 └── tsconfig.json
 ```
+
+
+## Licencia
+
+- MIT License
+
